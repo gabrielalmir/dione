@@ -1,0 +1,16 @@
+### Create a queue job
+
+POST http://localhost:3000/queue/
+Content-Type: application/json
+
+{
+  "endpoint": "https://api.github.com/users/gabrielalmir",
+  "method": "GET",
+  "headers": {
+    "Accept": "application/json"
+  }
+}
+
+### Get the queue job from db
+
+GET http://localhost:3000/queue/1
